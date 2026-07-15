@@ -30,16 +30,57 @@
             <h2 class="section-title">Meus Projetos</h2>
         </section>
 
-        <div class="grid">
-            <h3>Projeto 1</h3>
-            <p>Descrição do projeto</p>
-            <div class="tech-tags">
-                <span class="tag">Linguagem 1</span>
-                <span class="tag">Linguagem 2</span>
-                <span class="tag">API</span>
+        <section id="projetos">
+            <div class="wrap reveal">
+            <p class="eyebrow">Projetos</p>
+            <h2 class="section-title">Alguns jobs que rodaram bem</h2>
+            <p class="section-sub">Três exemplos recentes, com métrica real de impacto — não só "usei tal tecnologia".</p>
+
+            <div class="projects">
+                <div class="job-card">
+                <div class="job-bar">
+                    <div class="job-dots"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div>
+                    <span class="badge done"><span class="dot green"></span>Concluído</span>
+                </div>
+                <div class="job-body">
+                    <div class="job-title">pipeline-vendas-realtime</div>
+                    <p class="job-desc">Ingestão de dados de vendas em tempo real com Kafka + Airflow, substituindo relatórios batch de 24h.</p>
+                    <div class="job-metrics">
+                    <div class="metric"><strong>-95%</strong><span>latência de relatório</span></div>
+                    <div class="metric"><strong>2M+</strong><span>eventos / dia</span></div>
+                    </div>
+                    <div class="job-tags">
+                    <span class="chip">Python</span><span class="chip">Kafka</span><span class="chip">Airflow</span><span class="chip">PostgreSQL</span>
+                    </div>
+                </div>
+                <div class="job-links">
+                    <a href="#">github →</a>
+                </div>
+                </div>
+
+                <div class="job-card">
+                <div class="job-bar">
+                    <div class="job-dots"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div>
+                    <span class="badge live"><span class="dot"></span>em produção</span>
+                </div>
+                <div class="job-body">
+                    <div class="job-title">api-pagamentos-v2</div>
+                    <p class="job-desc">API REST para processamento de pagamentos com garantia de idempotência e alta concorrência.</p>
+                    <div class="job-metrics">
+                    <div class="metric"><strong>10k</strong><span>req / s</span></div>
+                    <div class="metric"><strong>99.98%</strong><span>uptime</span></div>
+                    </div>
+                    <div class="job-tags">
+                    <span class="chip">Go</span><span class="chip">Redis</span><span class="chip">PostgreSQL</span><span class="chip">Docker</span>
+                    </div>
+                </div>
+                    <div class="job-links">
+                        <a href="#">github →</a>
+                    </div>
+                </div>
             </div>
-            <a href="#" class="card-link" target="_blank">Ver repositório &rarr;</a>
-        </div>
+            </div>
+        </section>
 
         <div class="fact">
             <div class="fact"><span>Localização</span> <span>Itajaí, SC</span></div>
@@ -84,7 +125,7 @@
         <footer id="contato">
             <p style="margin-bottom: 1.5rem;">Gostou do meu trabalho? Vamos conversar!</p>
             <div style="display: flex; justify-content: center; gap: 1.5rem; margin-bottom: 1.5rem;">
-                <a href="https://github.com" target="_blank" style="color: var(--text-main); text-decoration: none; font-weight: bold;">GitHub</a>
+                <a href="https://github.com/christianrs00" target="_blank" style="color: var(--text-main); text-decoration: none; font-weight: bold;">GitHub</a>
                 <a href="https://linkedin.com" target="_blank" style="color: var(--text-main); text-decoration: none; font-weight: bold;">LinkedIn</a>
                 <a href="mailto:seuemail@email.com" style="color: var(--text-main); text-decoration: none; font-weight: bold;">E-mail</a>
             </div>
