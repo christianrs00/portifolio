@@ -13,17 +13,59 @@
             <div class="logo">&lt;Christian.Dev /&lt;</div>
             <nav class="nav-links">
                 <a href="#sobre">Sobre</a>
-                <a href="#stacks">Stacks</a>
+                <a href="#stack">Stacks</a>
                 <a href="#projetos">Projetos</a>
                 <a href="#experiencia">Experiência</a>
                 <a href="#contato">Contato</a>
             </nav>
         </header>
 
-        <section class="hero">
+        <section class="hero" id="sobre">
             <h1>Olá, Sou o <span>Christian</span></h1>
             <p>Estudante de Analise e Desenvolvimento de Sistemas. Desenvolvo soluções eficiêntes de software, focado em backend, automação e otimização de processos</p>
-            <a href="contato" class="botao">Entre em contato</a>
+            <a href="#contato" class="botao">Entre em contato</a>
+        </section>
+
+        <section id="stack">
+            <div class="wrap reveal">
+            <p class="eyebrow">stack</p>
+            <h2 class="section-title">Ferramentas do dia a dia</h2>
+            <p class="section-sub">Organizado como eu organizaria uma tabela: o essencial primeiro, tags para o resto.</p>
+
+            <div class="schema">
+                <div class="schema-head">
+                <span>campo</span><span>categoria</span><span>valores</span>
+                </div>
+                <div class="schema-row">
+                <span class="field">linguagens</span>
+                <span class="type">core</span>
+                <div class="chips">
+                    <span class="chip">Python</span><span class="chip">SQL</span><span class="chip">Go</span><span class="chip">Java</span>
+                </div>
+                </div>
+                <div class="schema-row">
+                <span class="field">dados</span>
+                <span class="type">armazenamento & fluxo</span>
+                <div class="chips">
+                    <span class="chip">PostgreSQL</span><span class="chip">MongoDB</span><span class="chip">Redis</span><span class="chip">Kafka</span><span class="chip">Airflow</span><span class="chip">dbt</span>
+                </div>
+                </div>
+                <div class="schema-row">
+                <span class="field">infra_cloud</span>
+                <span class="type">deploy</span>
+                <div class="chips">
+                    <span class="chip">AWS (S3, Lambda, RDS)</span><span class="chip">Docker</span><span class="chip">Kubernetes</span><span class="chip">Terraform</span>
+                </div>
+                </div>
+                <div class="schema-row">
+                <span class="field">observabilidade</span>
+                <span class="type">operação</span>
+                <div class="chips">
+                    <span class="chip">Grafana</span><span class="chip">Prometheus</span><span class="chip">GitHub Actions</span>
+                </div>
+                </div>
+            </div>
+            </div>
         </section>
 
         <section id="projetos" class="projects">
@@ -32,7 +74,6 @@
 
         <section id="projetos">
             <div class="wrap reveal">
-            <p class="eyebrow">Projetos</p>
             <h2 class="section-title">Alguns jobs que rodaram bem</h2>
             <p class="section-sub">Três exemplos recentes, com métrica real de impacto — não só "usei tal tecnologia".</p>
 
@@ -126,8 +167,9 @@
             <p style="margin-bottom: 1.5rem;">Gostou do meu trabalho? Vamos conversar!</p>
             <div style="display: flex; justify-content: center; gap: 1.5rem; margin-bottom: 1.5rem;">
                 <a href="https://github.com/christianrs00" target="_blank" style="color: var(--text-main); text-decoration: none; font-weight: bold;">GitHub</a>
-                <a href="https://linkedin.com" target="_blank" style="color: var(--text-main); text-decoration: none; font-weight: bold;">LinkedIn</a>
-                <a href="mailto:seuemail@email.com" style="color: var(--text-main); text-decoration: none; font-weight: bold;">E-mail</a>
+                <a href="https://www.linkedin.com/in/christian-rs/" target="_blank" style="color: var(--text-main); text-decoration: none; font-weight: bold;">LinkedIn</a>
+                <a href="mailto:christian.break@icloud.com.com" style="color: var(--text-main); text-decoration: none; font-weight: bold;">E-mail</a>
+                 <a href="#" style="color: var(--text-main); text-decoration: none; font-weight: bold;">baixar CV</a>
             </div>
             <p>&copy; 2026 Christian. Todos os direitos reservados.</p>
         </footer>
