@@ -72,6 +72,7 @@ nav a:hover{
 
 .hero p {
     font-size:  1.25rem;
+    text-align: justify;
     color: var(--text-muted);
     margin-bottom: 2rem;
     max-width: 600px;
@@ -80,42 +81,56 @@ nav a:hover{
 }
 
 .botao{
-    display: inline-block;
-    background-color: var(--accent-color);
-    color: white;
-    padding: 0.75rem 1.5rem;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: backgroud 0.3s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--accent-color);
+  border-radius: 10px;
+  background-color: var(--accent-color);
+  padding: 0.625rem 1.5rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  outline: 0;
+  transition: all  .2s ease;
+  text-decoration: none;
+}
+.botao:hover {
+  background-color: transparent;
+  color: var(--accent-houver);
+  transform: scale(0.8);
 }
 
-.projects{
-    padding: 4rem 0;
+
+.projetos{
+    padding: 2rem 0;
 }
 
-.section-title{
+.sub-titulo{
     font-size: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 0.3rem;
     text-align: center;
     position: relative;
 }
 
-.section-title::after{
+.sub-titulo::after{
     content: '';
     display: block;
-    width: 50px;
+    width: 110px;
     height: 4px;
     background-color: var(--accent-color);
     margin: 0.5rem auto 0;
     border-radius: 2px;
 }
 
-.grid{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, manmax(300px, 1fr));
-    gap: 24px;
-    @media (max-width: 960px){.projects{grid-template-columns: 1fr;}}
+.paragrafo{
+    font-size:  16px;
+    text-align: justify;
+    color: var(--text-muted);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .card{
@@ -292,7 +307,7 @@ nav a:hover{
     margin-bottom:8px; 
 }
 
-.ver{
+.versao{
     font-family:var(--mono);
     font-size:0.78rem;
     color:var(--text-main);
@@ -301,57 +316,12 @@ nav a:hover{
     border-radius:5px;
     font-weight:700; 
 }
-.date{
+.data{
     font-family:var(--mono);
-    font-size:0.78rem;
+    font-size:0.82rem;
     color:var(--text-muted);
 }
-.entry h3{ 
-    font-size:1.05rem; 
-    font-weight:700; 
-    margin-bottom:6px; 
-}
-.entry h3 span{ 
-    color:var(--text-muted); 
-    font-weight:500; 
-}
-.entry p{ 
-    color:var(--text-muted); 
-    font-size:0.92rem; 
-    max-width:65ch; 
-}
 
-.schema{
-    border:1px solid var(--border); border-radius:var(--radius); overflow:hidden;
-  }
-  .schema-head, .schema-row{
-    display:grid; grid-template-columns:180px 160px 1fr; gap:16px;
-    padding:16px 20px; align-items:center;
-  }
-  .schema-head{
-    background:var(--bg-panel-2); font-family:var(--mono); font-size:0.72rem;
-    text-transform:uppercase; letter-spacing:0.06em; color:var(--text-dim);
-    border-bottom:1px solid var(--border-soft);
-  }
-.schema-row{ 
-    border-bottom:1px solid var(--border-soft); background:var(--bg-panel); 
-    width: 400px;
-   
-}
-.schema-row:last-child{
-    border-bottom:none; 
-}
-  .schema-row .field{
-    font-family:var(--mono);
-    font-weight:600; color:var(--accent-color);
-    font-size:0.9rem; 
-}
-  .schema-row .type{ font-family:var(--mono); font-size:0.8rem; color:var(--text-dim); }
-  .chips{ flex-wrap:wrap; gap:8px; }
-  .chip{
-    font-family:var(--mono); font-size:0.78rem; color:var(--text-muted);
-    background:var(--bg-chip); border:1px solid var(--border); padding:5px 10px; border-radius:6px;
-  }
   @media (max-width:700px){
     .schema-head{ display:none; }
     .schema-row{ grid-template-columns:1fr; gap:8px; }
