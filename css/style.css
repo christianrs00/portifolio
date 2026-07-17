@@ -9,7 +9,7 @@
     --border-bottom: #334155;
     --tag-color: rgba(99, 102, 241, 0.15);
     --amber: #E8A33D;
-     --cyan: #5FD1D8;
+    --cyan: #5FD1D8;
     --mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
 
 }
@@ -167,6 +167,20 @@ nav a:hover{
     border-bottom:1px solid var(--border-soft);
 }
 
+.job-card{
+    padding: 3px;
+    align-items: center;
+}
+
+
+.job-body{
+    width: 400px;
+    background-color: var(--border-bottom);
+    padding: 2.2rem;
+    border-radius: 5px;
+    justify-content: space-between;
+}
+
 .job-title{
     font-family: var(--mono);
     font-weight: 0.98rem;
@@ -175,12 +189,13 @@ nav a:hover{
 
 .job-desc{
     color: var(--text-muted);
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 }
 
 .job-metrics{
     display: flex;
-    gap: 20px;
+    gap: 10px;
+  
 }
 
 .job-tags{
@@ -198,13 +213,14 @@ nav a:hover{
     display: flex;
     gap: 16px;
     padding: 14px 20px;
-    border-top: 1px solid var(--card-bg);
     font-family: var(--mono);
     font-size: 0.78rem;
 }
 .job-links a {
     color: var(--text-muted);
     transition: color .15s ease;
+    text-decoration: none;
+    font-size: 0.9rem;
 }
 .job-links a:hover{
     color: var(--cyan);
@@ -214,7 +230,7 @@ nav a:hover{
     display: block;
     font-family: var(--mono);
     font-size: 1.15rem;
-    color: var(--amber);
+    color: var(--accent-color);
 }
 
 .metric span{
@@ -265,7 +281,7 @@ nav a:hover{
     height:11px; 
     border-radius:50%;
     background:var(--bg-color);
-    border:2px solid var(--amber);
+    border:2px solid var(--accent-color);
   }
 
 .entry-head{
@@ -279,8 +295,8 @@ nav a:hover{
 .ver{
     font-family:var(--mono);
     font-size:0.78rem;
-    color:var(--bg-color);
-    background:var(--amber);
+    color:var(--text-main);
+    background:var(--accent-color);
     padding:2px 8px; 
     border-radius:5px;
     font-weight:700; 
@@ -317,11 +333,21 @@ nav a:hover{
     text-transform:uppercase; letter-spacing:0.06em; color:var(--text-dim);
     border-bottom:1px solid var(--border-soft);
   }
-  .schema-row{ border-bottom:1px solid var(--border-soft); background:var(--bg-panel); }
-  .schema-row:last-child{ border-bottom:none; }
-  .schema-row .field{ font-family:var(--mono); font-weight:600; color:var(--amber); font-size:0.9rem; }
+.schema-row{ 
+    border-bottom:1px solid var(--border-soft); background:var(--bg-panel); 
+    width: 400px;
+   
+}
+.schema-row:last-child{
+    border-bottom:none; 
+}
+  .schema-row .field{
+    font-family:var(--mono);
+    font-weight:600; color:var(--accent-color);
+    font-size:0.9rem; 
+}
   .schema-row .type{ font-family:var(--mono); font-size:0.8rem; color:var(--text-dim); }
-  .chips{ display:flex; flex-wrap:wrap; gap:8px; }
+  .chips{ flex-wrap:wrap; gap:8px; }
   .chip{
     font-family:var(--mono); font-size:0.78rem; color:var(--text-muted);
     background:var(--bg-chip); border:1px solid var(--border); padding:5px 10px; border-radius:6px;
