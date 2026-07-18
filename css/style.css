@@ -113,4 +113,38 @@ a :hover{
 .botao:hover{
     background-color: var(--border-bottom);
 }
-
+.sub-titulo{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    position: relative;
+}
+.paragrafo1{
+    font-size: 1.2rem;
+    color: var(--text-muted);
+    margin-bottom: 2rem;
+    max-width:400px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify center;
+}
+.span-pro{
+    font-family: var(--mono);
+    color: var(--text-main);
+    margin-bottom: 10px;
+}
+.corpo-pro{
+    width: 300px;
+    height: 320px;
+    text-align: justify;
+    padding: 30px;
+    border-radius: 30px;
+    background: var(--accent-color);
+    box-shadow: 15px 15px 30px var(--border-bottom), -15px -15px 30px var(--border-bottom);
+}
+.paragrafo-pro{
+    margin-bottom: 50px;
+}
+.metrica{
+    margin-bottom: 50px;
+}
