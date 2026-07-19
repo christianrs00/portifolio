@@ -21,59 +21,66 @@
 
       <section class="sobre" id="sobre">
         <h1>Olá, Sou o <span>Christian</span></h1>
-
-        <p>Estudante</p>
+        <p class="sub-sobre">Estudante</p>
 
         <a href="#contato" class="botao">Entre em contato</a>
-      </section id="projetos" class="projetos">
-        <h2 class="sub-titulo">Meus Projetos</h2>
-        <p class="paragrafo1">Três exemplos recentes</p>
-
-        <div class="card-pro">
-          <div class="span-pro">Concluído</div>
-        </div>
-        <div class="corpo-pro">
-          <div class="titulo-pro">Projeto desenvolvido</div>
-          <p class="paragrafo-pro">Descrição do projeto</p>
-          <div class="metrica">
-          <strong>-95%</strong><span> latência de relatório</span>
-          
-        <div class="linguagem">
-          <span class="chip">linguagem 1</span>
-          <span class="chip">linguagem 2</span>
-          <span class="chip">linguagem 3</span>
-          <span class="chip">linguagem 4</span>
-        </div>
-        </div>
-        </div>
-
-       
-
-        <div class="link-pro">
-          <a href="#">GitHub →</a>
-        </div>  
-
-      </section>
-
-      <div>
-        <h2 class="sub-titulo">Experiência</h2>
-        <p><span>Experiência: </span> 5 + anos em Industrias</p>
-      </div>
-
-      <div>
-        <h2 class="titulo2">Historico de carreiras</h2>
-        <p class="paragrafo-pro">Da mais recente para mais antiga - como um bom historico de versões</p>
-      </div>
       
-      <div class="card-ver">
-        <span class="versao">v3.0</span>
-        <span class="data">2026 - Atual</span>
-      </div>
+        <section id="projetos" class="projetos">
+            <h2 class="sub-titulo">Meus Projetos</h2>
+            <div class="grid">
+                
+                <!-- Card Projeto 1 -->
+              <div class="corpo-pro">
+                <div class="job-bar">
+                  <div class="job-dots"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div>
+                  <span class="badge done"><span class="dot green"></span>concluído</span>
+                </div>
+                    <div>Stoke Controll</div>
+                    <p>Aplicação desktop para controle integrado de estoque, facilitando o gerenciamento de produtos com relatórios em tempo real e interface amigável.</p>
+                    <div class="tech-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">MySQL</span>
+                        <span class="tag">Tkinter</span>
+                    </div>
+                    <a href="#" class="card-link" target="_blank">Ver repositório &rarr;</a>
+                </div>
+            </div>
+          </section>
 
-      <div>
-        <h3 class="titulo3">Emprego atual @ Empresa</h3>
-        <p class="paragrafo-pro">Descrição das atividades</p>
+  <section id="experiencia">
+    <div class="wrap reveal">
+      <p class="eyebrow">experiência</p>
+      <h2 class="sub-titulo">Changelog de carreira</h2>
+      <p class="section-sub">Da mais recente para a mais antiga — como um bom histórico de versões deveria ser.</p>
+
+      <div class="changelog">
+        <div class="entry">
+          <div class="entry-head">
+            <span class="ver">v3.0</span>
+            <span class="date">2024 — atual</span>
+          </div>
+          <h3>Engenheira de Dados Sênior <span>@ Empresa X</span></h3>
+          <p>Liderança técnica da arquitetura de pipelines de dados do time de produto. Redesenho da ingestão de eventos e mentoria de dois engenheiros júnior.</p>
+        </div>
+        <div class="entry">
+          <div class="entry-head">
+            <span class="ver">v2.0</span>
+            <span class="date">2022 — 2024</span>
+          </div>
+          <h3>Engenheira Backend <span>@ Empresa Y</span></h3>
+          <p>Construção de APIs e microsserviços para o core de pagamentos, com foco em confiabilidade e observabilidade.</p>
+        </div>
+        <div class="entry">
+          <div class="entry-head">
+            <span class="ver">v1.0</span>
+            <span class="date">2020 — 2022</span>
+          </div>
+          <h3>Analista de Dados <span>@ Empresa Z</span></h3>
+          <p>Dashboards, ETL e primeiros pipelines automatizados — onde percebi que queria construir sistemas, não só relatórios.</p>
+        </div>
       </div>
+    </div>
+  </section>
 
     <footer id="contato">
       <p style="margin-bottom: 1.5rem;">Gostou do meu trabalho? Vamos conversar!</p>
