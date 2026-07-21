@@ -222,6 +222,7 @@ a :hover{
 .job-bar{
     display:flex; 
     align-items:center; 
+    flex-direction: column;
     justify-content:space-between;
     padding:12px 16px; 
     background:var(--bg-panel-2); 
